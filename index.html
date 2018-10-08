@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Creative - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <!-- Include jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+ <script type="text/javascript" language="javascript">
+    function activer( elem1, elem2,elem3,elem4,elem5,elem6, statut ){
+    var mon_bouton = document.forms.formulaire.bouton;
+ 
+        if (mon_bouton.value=='Activer') {
+            elem1.disabled = statut;
+            elem2.disabled = statut;
+            elem3.disabled = statut;
+            elem4.disabled = statut;
+            elem5.disabled = statut;
+            elem6.disabled = statut;
+            mon_bouton.value = 'Desactiver'
+        } else {
+            elem1.disabled = !statut;
+            elem2.disabled = !statut;
+            elem3.disabled = !statut;
+            elem4.disabled = !statut;
+            elem5.disabled = !statut;
+            elem6.disabled = !statut;
+            mon_bouton.value ='Activer'
+        }
+     
+    }
+</script>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Espace Membre</a>
+        <i class="fa fa-6x fa-user text-primary mb-2 sr-icons"></i>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#reservation">Reservation</a>
+            </li>
+                 <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+       
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+           <!-- <h1 class="text-uppercase">
+              <strong>Your Favorite Source of Free Bootstrap Themes</strong>
+            </h1>
+          -->
+            <img src="./img/logo1.png" style="max-width:40%;height:auto;"alt="logo executive">
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">VOTRE VEHICULE AVEC CHAUFFEUR</p>
+            <a class="btn btn-secondary btn-xl js-scroll-trigger" href="#reservation">Reservez votre course</a>
+          </div>
+        </div>
+      </div>
+     
+    </header>
+
+
+   
+
+
+ 
+    <section class="bg-secondary text-white" id="reservation">
+
+      <div class="container">
+        <div class="container-fluid p-0">
+
+           <form name="formulaire" method="post" action="#">
+            <div class="form-row">
+              <div class="col">
+              <label class="text-white" for="formGroupExampleInput">Nom :</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nom">
+               </div>
+           
+           
+               <div class="col">
+              <label class="text-white" for="formGroupExampleInput2">Prenom :</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Prenom">
+          </div>
+        </div>
+            <div class="form-row">
+              <div class="col">
+              <label class="text-white" for="formGroupExampleInput3">Société :</label>
+              <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Société">
+          </div>
+              <div class="col">
+                <label class="text-white" for="formGroupExampleInput4">Numéro de telephone :</label>
+                <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="06 XX XX XX XX">
+              </div>
+          </div>
+
+           <div class="form-row">
+              <div class="col">
+                <label class="text-white" for="formGroupExampleInput4">EMAIL :</label>
+                <input type="email" class="form-control" id="formGroupExampleInput4" placeholder="adresse@domaine.fr">
+               </div>
+
+               <div class="col">
+                
+               </div>
+           </div>
+
+           <br>
+            <div class="form-row">
+              <div class="col">
+                <div class="form-check">
+                <label class="text-white" for="formGroupExampleInput4">Aller Retour :</label>
+                <input type="checkbox"  name="bouton" value="Activer" 
+                onclick="activer(document.forms.formulaire.champ1, document.forms.formulaire.champ2, document.forms.formulaire.champ3, document.forms.formulaire.champ4, document.forms.formulaire.champ5,document.forms.formulaire.champ6, false);">
+                </div>  
+              </div>
+            </div>
+          <div class="form-row">
+            <div class="col">
+              <label class="text-white" for="champ1">Date</label>
+              <input type="date" class="form-control"  id="formGroupExampleInput3" placeholder="Société" >
+            </div>
+            <div class="col">
+              <label class="text-white" for="champ1">Heure de prise en charge</label>
+              <input type="text" class="form-control"  id="formGroupExampleInput3" placeholder="Société" >
+            </div>
+          
+              <div class="col">
+                <label class="text-white" for="champ1">Date (retour)</label>
+                <input type="date" class="form-control" disabled="true" id="formGroupExampleInput3" placeholder="06 XX XX XX XX" name="champ1">
+              </div>
+              <div class="col">
+                <label class="text-white" for="champ2">Heure de prise en charge (retour)</label>
+                <input type="text" class="form-control" disabled="true" id="formGroupExampleInput3" placeholder="06 XX XX XX XX" name="champ2">
+              </div>
+            
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <label class="text-white" for="champ1">Départ</label>
+              <input type="text" class="form-control"  id="formGroupExampleInput3" placeholder="Départ de la course" >
+            </div>
+            <div class="col">
+              <label class="text-white" for="champ1">Départ (retour)</label>
+              <input type="text" class="form-control" disabled="true" id="formGroupExampleInput3" placeholder="Départ de la course" name="champ3" >
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <label class="text-white" for="champ1">Destination</label>
+              <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Destination de la course" >
+            </div>
+            <div class="col">
+              <label class="text-white" for="champ1">Destination (retour)</label>
+              <input type="text" class="form-control" disabled="true" id="formGroupExampleInput3" placeholder="Destination de la course" name="champ4">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <label class="text-white" for="champ1">Nombre de personnes</label>
+              <input type="text" class="form-control"  id="formGroupExampleInput3" placeholder="Nombre de passagers" >
+            </div>
+            <div class="col">
+              <label class="text-white" for="champ1">Nombre de personnes (retour)</label>
+              <input type="number" class="form-control" disabled="true" id="formGroupExampleInput3" placeholder="Nombre de passagers" name="champ5">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <label class="text-white" for="champ1">Gamme de véhicule</label>
+              <input type="text" class="form-control"  id="formGroupExampleInput3" placeholder="Société" >
+            </div>
+            <div class="col">
+              <label class="text-white" for="champ1">Gamme de véhicule(retour)</label>
+              <input type="text" class="form-control" disabled="true" id="formGroupExampleInput3" placeholder="Société" name="champ6">
+            </div>
+          </div>
+  
+        </form>
+      </div>
+        <br>
+         <div class="col-lg-4 mx-auto text-center">
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Réserver!</a>
+            <div class="col-lg-15 mx-auto text-left">
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+
+
+
+    </section>
+
+    <section class="bg-primary" id="contact">
+      <div class="container">
+        <div class="col-lg-4 mx-auto text-center">
+             <p>
+             <a class="text-white mb-4"> Executive Roadlines  </a><br>
+             <a size=2 class="text-white mb-4"> Aéroport Toulouse Blagnac</a> <br>
+             <a size=2 class="text-white mb-4"> Batiment 5 </a><br>
+             <a size=2 class="text-white mb-4"> 31700 Blagnac </a><br>
+           </p>
+          </div>
+                 <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p> <a class="text-white"> 09 50 86 63 74 </p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a class="text-white" href="mailto:your-email@your-domain.com">contact@executive-er.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-8 mx-auto text-center">
+
+            <!--<h2 class="section-heading text-white">We've got what you need!</h2>
+            <hr class="light my-4">-->
+
+            <p class="text-white mb-4"> Nous vous invitons à remplir le formulaire ci-dessous pour tous devis ou informations</p>
+
+            <form>
+            
+            <div class="form-row">
+              <div class="col">
+              <label class="text-white" for="formGroupExampleInput">Nom :</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nom">
+               </div>
+           
+           
+               <div class="col">
+              <label class="text-white" for="formGroupExampleInput2">Prenom :</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Prenom">
+          </div>
+        </div>
+            <div class="form-row">
+              <div class="col">
+                <label class="text-white" for="formGroupExampleInput3">Numéro de telephone :</label>
+                <input type="number" class="form-control" id="formGroupExampleInput3" placeholder="06 XX XX XX XX">
+              </div>
+
+
+              <div class="col">
+                <label class="text-white" for="formGroupExampleInput4">EMAIL :</label>
+                <input type="email" class="form-control" id="formGroupExampleInput4" placeholder="adresse@domaine.fr">
+              </div>
+            </div> 
+            <label class="text-white" for="exampleFormControlTextarea1">Votre Message :</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </form>
+       <br>
+                      <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Demander un devis!</a>
+            <div class="col-lg-15 mx-auto text-left">
+              <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-0" id="about">
+
+      <div class="container">
+        <br>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h4 class="section-heading">Depuis 2012, Executive Roadlines développe son activité dans le secteur du transport de personnes.</h4>
+            <h4 class="section-heading">Pour un usage privé ou dans le cadre de votre profession, nous vous accompagnons au travers de prestations personnalisées ayant pour vut de répondre au mieux à vos besoins.</h4>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-map-pin text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Transferts</h3>
+              <p class="text-muted mb-0">Au départ et à l'arrivée de votre choix.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-star text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Evénements</h3>
+              <p class="text-muted mb-0">Mariages, Séminaires, soirées d'entreprises, Kermesses...</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Tourisme</h3>
+              <p class="text-muted mb-0">Circuits, Visites guidées.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-automobile text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Mise à disposition</h3>
+              <p class="text-muted mb-0">Pour la durée de votre choix!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+       <hr class="my-4">
+            <div class="container">
+        <div class="row">
+         
+          <div class="col-lg-12 text-center">
+            <h4 class="section-heading">Ces prestations sont proposées à partir de notre flotte de véhicules qui se compose:</h4>
+            <h4 class="section-heading">D'une gamme classique (Monospace et van Renault)</h4>
+            <h4 class="section-heading">D'une gamme prenium (berline et van Mercedes)</h4>
+            <br>
+            <h4 class="section-heading">Pour les prestations de groupes, nous mettons à votre service un large choix d'autocars de différents capacités.</h4>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>  
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+      </div>
+    </section>
+
+
+            <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+        <!-- Include Date Range Picker -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+  </body>
+
+</html>
